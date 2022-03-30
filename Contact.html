@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Homepage</title>
+	<style>
+	
+    </style>
+	<link href="CSS_Styles/nav_styles.css" rel="stylesheet" type="text/css">
+	<link href="CSS_Styles/Sidebar_styles.css" rel="stylesheet" type="text/css">
+	<link href="CSS_Styles/Styles.css" rel="stylesheet" type="text/css">
+	<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+	<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+	<link href="jQueryAssets/jquery.ui.autocomplete.min.css" rel="stylesheet" type="text/css">
+	<link href="jQueryAssets/jquery.ui.menu.min.css" rel="stylesheet" type="text/css">
+	<link href="jQueryAssets/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.autocomplete.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.datepicker.min.js"></script>
+</head>
+
+<body>
+	<div id="container">
+		<header><a href="Homepage.html" title="DuBois Discoveries Home"><img src="images/Logo_Large.png" width="414" height="204" alt="DuBois Discoveries"/></a></header>
+		  <nav id="Navigation">
+			<ul>
+			  <li><a href="Homepage.html">Home</a></li>
+
+			  <li><a href="#">Destination </a>
+			    <ul>
+				  <li><a href="France.html">France</a></li>
+					<li><a href="England.html">England</a></li>
+				  </ul>
+			  </li>
+			  <li><a href="Contact.html">Contact Us</a></li>
+			</ul>
+		  </nav>
+		<section id="main">
+			<h1>Contact Us!</h1>
+		  <iframe width="560" height="315" src="https://www.youtube.com/embed/lVrYrzS2Azw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen ></iframe>
+		  <form method="post" enctype="multipart/form-data" name="contact" id="contact">
+      <p class="labels">
+        <label for="mailing_list_names">Name:*</label>
+        <input name="mailing_list_names" type="text" autofocus="autofocus" required="required" id="mailing_list_names" form="contact" placeholder="Please enter your full anme" size="55" maxlength="30">
+        <br />
+        <label for="malling_list_address">Address:*</label>
+        <input name="malling_list_address" type="text" required="required" id="malling_list_address" form="contact" size="55" maxlength="30">
+        <br />
+        <label for="mailing_list_City_State_Zip">City/State/Zip:*</label>
+        <input name="mailing_list_City_State_Zip" type="text" required="required" id="mailing_list_City_State_Zip" form="contact" size="55" maxlength="30">
+        <br>
+        <label for="mailling_list_email">Email:*</label>
+        <input name="mailling_list_email" type="text" required="required" id="mailling_list_email" form="contact" size="55" maxlength="30">
+      </p>
+      <p class="labels">I'm interested in receiving information on:<br />
+        <input name="Receive_info" type="checkbox" id="Sales" form="contact" value="Flights">
+        Flights<br>
+        <input name="Receive_info" type="checkbox" id="Events" form="contact" value="Sights">
+        Sights<br>
+        <input name="Receive_info" type="checkbox" id="Charity_drives" form="contact" value="Hotels">
+        Hotels</p>
+      <p class="labels">I am interested in visting:<br />
+        <label>
+          <input name="Destination" type="checkbox" id="location_england" form="contact" value="England">
+       	England</label>
+        <br>
+        <label>
+          <input name="Destination" type="checkbox" id="location_france" form="contact" value="France">
+	    France</label>
+		  <br>
+		<label>
+          <input name="Destination" type="checkbox" id="location_switzerland" form="contact" value="Switzerland">
+		  Switzerland</label>
+        <br>
+      </p>
+      <p class="labels">
+        <label for="Volunteer">Price Range:</label>
+        <select name="Volunteer" multiple="MULTIPLE" id="Volunteer" form="contact">
+          <option value="to500">$0-$500</option>
+          <option value="to1000">$500-$1,000</option>
+          <option value="to3000">$1,000-$3,000</option>
+		  <option value="3000plus">$3,000+</option>
+        </select>
+      </p>
+	  <p class="labels">	
+		  <label name="Duration">Desired Travel Length (days):
+	        <input name="days" type="number" placeholder="3" min="1" step="1" title="Days" from="contact"></label>
+	    	
+	  </p>	  
+      <p class="labels">
+        <label for="Comments">Comments:<br>
+        </label>
+        <textarea name="Comments" cols="40" rows="5" id="Comments" form="contact"></textarea>
+        <br>
+      </p>
+      <p class="labels">Send us a picture of your dream vacaction!      
+        <input name="fileField" type="file" id="fileField" form="contact">
+      </p>
+      <p>
+        <input name="submit" type="submit" id="submit" form="contact" onClick="MM_validateForm('mailing_list_names','','R');return document.MM_returnValue" value="Submit">
+        <input name="reset" type="reset" id="reset" form="contact" value="Reset">
+        <input name="Validate" type="button" id="Validate" form="contact" onClick="MM_popupMsg('Validate this form.')" value="Validate">
+      </p>
+    </form>
+	  </section>
+
+		<sidebar id="sidebar">
+			<div id="side_content">
+				<script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Ffeeds.bbci.co.uk%2Fnews%2Fworld%2Feurope%2Frss.xml%23&chan=y&num=4&au=y&date=y&tz=-4&targ=y&utf=y&pc=y&html=a"  charset="UTF-8" type="text/javascript"></script>
+				<noscript>
+					<a href="http://feed2js.org//feed2js.php?src=http%3A%2F%2Ffeeds.bbci.co.uk%2Fnews%2Fworld%2Feurope%2Frss.xml%23&chan=y&num=4&au=y&date=y&tz=-4&targ=y&utf=y&pc=y&html=y">View RSS feed</a>
+				</noscript>
+		  </div>
+	  </sidebar>
+
+	  <footer id="footer">
+			<p>DuBois Discoveries &copy;<br>
+			Samantha DuBois - Block 7 - Spring 2019</p>
+		</footer>
+		
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Autocomplete1" ).autocomplete(); 
+});
+$(function() {
+	$( "#Datepicker1" ).datepicker({
+		showOn:"both",
+		showButtonPanel:true
+	}); 
+});
+</script>
+</body>
+</html>

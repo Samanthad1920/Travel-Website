@@ -1,0 +1,21 @@
+@charset "utf-8";
+#sidebar #side_content .rss-title {
+	color: #fff;
+}
+#sidebar #side_content .rss-item {
+	font-style: italic;
+}
+#side_content .rss-date {
+	font-style: normal;
+}
+
+#sidebar #side_content .rss-item a {
+	text-decoration: none;
+	color: #2B193D;
+	font-weight: bolder;
+	font-style: normal;
+}
+#sidebar #side_content .rss-item a:hover {
+	text-decoration: underline;
+	color: #694873;
+}
